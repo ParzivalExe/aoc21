@@ -9,8 +9,8 @@ namespace aoc21.day2
     internal class Position
     {
 
-        public int Horizontal { get; private set; }
-        public int Depth { get; private set; }
+        public int Horizontal { get; protected set; }
+        public int Depth { get; protected set; }
 
         public int Result
         {
@@ -23,7 +23,7 @@ namespace aoc21.day2
             Depth = 0;
         }
 
-        public void ChangePositionBy(PositionChangeType changeType, int amount)
+        protected virtual void ChangePositionBy(PositionChangeType changeType, int amount)
         {
             switch(changeType)
             {

@@ -31,6 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="inputFiles\Day1Final.aoc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
