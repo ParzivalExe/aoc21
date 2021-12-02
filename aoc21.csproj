@@ -11,6 +11,8 @@
     <None Remove="inputFiles\Day1Final.aoc" />
     <None Remove="inputFiles\Day1Final.txt" />
     <None Remove="inputFiles\Day1Test.txt" />
+    <None Remove="inputFiles\Day2Final.txt" />
+    <None Remove="inputFiles\Day2Test.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,12 +22,24 @@
     <Content Include="inputFiles\Day1Test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="inputFiles\Day2Final.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="inputFiles\Day2Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="inputFiles\Day1Final.aoc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="day2\Day2.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
 </Project>

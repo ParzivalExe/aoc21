@@ -1,5 +1,6 @@
 ﻿using aoc.structure;
 using aoc21.day1;
+using aoc21.day2;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
@@ -11,7 +12,7 @@ namespace aoc.twentyOne
 
         public static List<Day> Days = new List<Day>()
         {
-            new Day1()
+            new Day1(), new Day2()
         };
 
         public static void Main(string[] args)
