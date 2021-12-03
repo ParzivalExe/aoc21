@@ -6,7 +6,7 @@ using Xunit;
 
 namespace aoc21Test
 {
-    public class UnitTest1
+    public class UnitTests
     {
 
         [Theory]
@@ -20,6 +20,11 @@ namespace aoc21Test
         [InlineData(2, 1, @"inputFiles\Day2Test.txt", 150)]
         //Task2
         [InlineData(2, 2, @"inputFiles\Day2Test.txt", 900)]
+        //DAY 3
+        //Task1
+        [InlineData(3, 1, @"inputFiles\Day3Test.txt", 198)]
+        //Task2
+        [InlineData(3, 2, @"inputFiles\Day3Test.txt", 230)]
         public void Tests(int dayInt, int task, string fileName, int result)
         {
             Day day = Program.GetDay(dayInt);
@@ -39,6 +44,11 @@ namespace aoc21Test
         [InlineData(2, 1, @"inputFiles\Day2Final.txt", 2027977)]
         //Task2
         [InlineData(2, 2, @"inputFiles\Day2Final.txt", 1903644897)]
+        //DAY 3
+        //Task1
+        [InlineData(3, 1, @"inputFiles\Day3Final.txt", 1458194)]
+        //Task2
+        [InlineData(3, 2, @"inputFiles\Day3Final.txt", 2829354)]
         public void DayTasks(int dayInt, int task, string fileName, int result)
         {
             Day day = Program.GetDay(dayInt);

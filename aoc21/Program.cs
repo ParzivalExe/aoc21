@@ -1,6 +1,7 @@
 ﻿using aoc.structure;
 using aoc21.day1;
 using aoc21.day2;
+using aoc21.day3;
 using aoc21.structure;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
@@ -13,7 +14,7 @@ namespace aoc.twentyOne
 
         public static List<Day> Days = new List<Day>()
         {
-            new Day1(), new Day2()
+            new Day1(), new Day2(), new Day3()
         };
 
         public static void Main(string[] args)
@@ -28,7 +29,7 @@ namespace aoc.twentyOne
                         int.TryParse(args[1], out taskNumber);
                     Day day = GetDay(dayNumber);
 
-                    string path = args.Length >= 2 ? args[1] : day.DefaultPath;
+                    string path = args.Length >= 3 || (args.Length == 2 && taskNumber == 0) ? args[1] : day.DefaultPath;
 
                     Stopwatch stopwatch = new Stopwatch();
                     stopwatch.Start();
